@@ -1,0 +1,70 @@
+<div id="page-container" class="wrapper wrapper-home white">
+	<% if signed_in? %>
+	<div class="dashboard">
+		<div class="module mini-profile">
+			<%= render 'shared/user_info' %>
+
+			<%= render 'shared/stats' %>
+			<% if !current_user.nil? %>
+			<h2 class="js-timeline-title">All User Reviews</h2>
+			<%= render @movie_reviews_all %>
+			<% end %>
+		</div>
+	</div>
+	<% else %>
+	<div class="dashboard">
+		<div class="module mini-profile">
+			<div class="flex-module profile-summary js-profile-summary">
+
+				<a href="/movie_reviews"
+				class="account-summary account-summary-small js-nav"
+				data-nav="profile">
+				<div class="content">
+					<div class="account-group js-mini-current-user" data-user-id="16120321" data-screen-name="mdreeling">
+						<img class="avatar size32" src="assets/logo.jpg" alt="Mick">
+						<b class="fullname">Movie Tweets!</b>
+						<small class="metadata"> Your movie tweet resource</small>
+						<small class="metadata"> (login or signup to post reviews!)</small>
+					</div>
+				</div> </a>
+			</div>
+			<div class="js-mini-profile-stats-container">
+				<ul class="stats js-mini-profile-stats" data-user-id="16120321">
+					<li>
+						<a class="js-nav" href="/user" data-element-term="tweet_stats" data-nav='profile'> <strong><%= @movie_reviews.count %></strong> Reviews online</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<% end %>
+	<div class="content-main" id="timeline">
+		<div class="content-header">
+			<div class="header-inner">
+
+				<% if !current_user.nil? %>
+				<h2 class="js-timeline-title">My Movie Reviews</h2>
+				<% else %>
+				<h2 class="js-timeline-title">All Users Movie Reviews</h2>
+				<% end %>
+
+			</div>
+		</div>
+		<div class="stream-container "
+		data-max-id="288081372772458495" data-since-id="288098988383666176"
+
+		>
+			<div class="stream home-stream">
+				<div class="stream-items" id="stream-items-id">
+					<% if !current_user.nil? %>
+					<% if current_user.movie_reviews.any? %>
+					<%= render @movie_reviews %>
+					<% end %>
+					<% else %>
+					<%= render @movie_reviews %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

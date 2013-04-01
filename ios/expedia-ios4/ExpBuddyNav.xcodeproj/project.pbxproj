@@ -1,0 +1,1339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* NavAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NavAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1FA1FE220E367D670046019F /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1C0E367D670046019F /* disclosureButtonControllerIcon.png */; };
+		1FA1FE230E367D670046019F /* detailEditIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1D0E367D670046019F /* detailEditIcon.png */; };
+		1FA1FE240E367D670046019F /* deleteMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1E0E367D670046019F /* deleteMeIcon.png */; };
+		1FA1FE250E367D670046019F /* rowControlsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1F0E367D670046019F /* rowControlsIcon.png */; };
+		1FA1FE260E367D670046019F /* checkmarkControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE200E367D670046019F /* checkmarkControllerIcon.png */; };
+		1FA1FE270E367D670046019F /* moveMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE210E367D670046019F /* moveMeIcon.png */; };
+		1FC644810E364645009A5515 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC644800E364645009A5515 /* RootViewController.m */; };
+		1FC6448E0E365214009A5515 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC6448D0E365214009A5515 /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		8602CC720F79C5800003545B /* expedia_itinerary.html in Resources */ = {isa = PBXBuildFile; fileRef = 8602CC710F79C5800003545B /* expedia_itinerary.html */; };
+		8602CC890F79D6A80003545B /* HTMLDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8602CC880F79D6A80003545B /* HTMLDetailView.xib */; };
+		8602CC8C0F79D6CD0003545B /* HTMLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602CC8B0F79D6CD0003545B /* HTMLDetailViewController.m */; };
+		8602CCD90F79DC820003545B /* itn-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 8602CCD80F79DC820003545B /* itn-detail.html */; };
+		86045C960F85A8070063653F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86045C950F85A8070063653F /* CoreLocation.framework */; };
+		86045C9E0F85A82D0063653F /* libFlurryWithLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86045C9D0F85A82D0063653F /* libFlurryWithLocation.a */; };
+		8609D5050F6F3553004C7CC4 /* ExpediaBuddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D4F70F6F3553004C7CC4 /* ExpediaBuddyViewController.m */; };
+		8609D52C0F6F3D64004C7CC4 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D52B0F6F3D64004C7CC4 /* XPathQuery.m */; };
+		8609D5780F6F4293004C7CC4 /* ExpediaBuddyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5760F6F4293004C7CC4 /* ExpediaBuddyViewController.xib */; };
+		8609D5790F6F4293004C7CC4 /* ItineraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5770F6F4293004C7CC4 /* ItineraryView.xib */; };
+		8609D5810F6F42BF004C7CC4 /* hdr_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D57E0F6F42BF004C7CC4 /* hdr_logo.png */; };
+		8609D5820F6F42BF004C7CC4 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D57F0F6F42BF004C7CC4 /* whiteButton.png */; };
+		8609D5830F6F42BF004C7CC4 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5800F6F42BF004C7CC4 /* blueButton.png */; };
+		8609D64A0F6F49F4004C7CC4 /* FirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D6490F6F49F4004C7CC4 /* FirstLevelViewController.m */; };
+		8615F2290F81AB61001739D7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615F2280F81AB61001739D7 /* Reachability.m */; };
+		8615F2340F81ABDD001739D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615F2330F81ABDD001739D7 /* SystemConfiguration.framework */; };
+		8615F2BD0F81C06C001739D7 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615F2BC0F81C06C001739D7 /* SFHFKeychainUtils.m */; };
+		8615F2C90F81C108001739D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615F2C80F81C108001739D7 /* Security.framework */; };
+		861F7F7F0F71DBF5009288EA /* Itinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F7F7E0F71DBF5009288EA /* Itinerary.m */; };
+		8624477E0F8D80E200C50745 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EBF1350F79BC6E00C8B434 /* RegexKitLite.m */; };
+		8626F9EF0F91301D00C3A673 /* ItineraryPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626F9EE0F91301D00C3A673 /* ItineraryPreViewController.m */; };
+		8626F9FD0F9130F400C3A673 /* ItineraryPreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626F9FC0F9130F400C3A673 /* ItineraryPreView.xib */; };
+		8626FAE80F9140DB00C3A673 /* VoucherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626FAE70F9140DB00C3A673 /* VoucherView.xib */; };
+		8638EF3C0FA6AC14007316BC /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8638EF3B0FA6AC0B007316BC /* libThree20.a */; };
+		8638EFFE0FA7CF72007316BC /* GeoNamesSiteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638EFFD0FA7CF72007316BC /* GeoNamesSiteInterface.m */; };
+		8638EFFF0FA7CF72007316BC /* GeoNamesSiteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638EFFD0FA7CF72007316BC /* GeoNamesSiteInterface.m */; };
+		8638F0000FA7CF72007316BC /* GeoNamesSiteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638EFFD0FA7CF72007316BC /* GeoNamesSiteInterface.m */; };
+		8639FBC40F7C3A09000CDDA9 /* pants_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8639FBC30F7C3A09000CDDA9 /* pants_icon.png */; };
+		8639FC220F7C4A91000CDDA9 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639FC210F7C4A91000CDDA9 /* DataManager.m */; };
+		8639FC3E0F7C4BA9000CDDA9 /* ExbuddiaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639FC3D0F7C4BA9000CDDA9 /* ExbuddiaData.m */; };
+		864DC3070F76C92F00940827 /* glossy_3d_blue_orbs2_059.png in Resources */ = {isa = PBXBuildFile; fileRef = 864DC3060F76C92F00940827 /* glossy_3d_blue_orbs2_059.png */; };
+		864DC3090F76C94000940827 /* glossy_3d_blue_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 864DC3080F76C94000940827 /* glossy_3d_blue_plane.png */; };
+		866498BA0F98239300B72B53 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		866498BB0F98239300B72B53 /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1C0E367D670046019F /* disclosureButtonControllerIcon.png */; };
+		866498BC0F98239300B72B53 /* detailEditIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1D0E367D670046019F /* detailEditIcon.png */; };
+		866498BD0F98239300B72B53 /* deleteMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1E0E367D670046019F /* deleteMeIcon.png */; };
+		866498BE0F98239300B72B53 /* rowControlsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1F0E367D670046019F /* rowControlsIcon.png */; };
+		866498BF0F98239300B72B53 /* checkmarkControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE200E367D670046019F /* checkmarkControllerIcon.png */; };
+		866498C00F98239300B72B53 /* moveMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE210E367D670046019F /* moveMeIcon.png */; };
+		866498C30F98239300B72B53 /* ExpediaBuddyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5760F6F4293004C7CC4 /* ExpediaBuddyViewController.xib */; };
+		866498C40F98239300B72B53 /* ItineraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5770F6F4293004C7CC4 /* ItineraryView.xib */; };
+		866498C50F98239300B72B53 /* hdr_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D57E0F6F42BF004C7CC4 /* hdr_logo.png */; };
+		866498C60F98239300B72B53 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D57F0F6F42BF004C7CC4 /* whiteButton.png */; };
+		866498C70F98239300B72B53 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5800F6F42BF004C7CC4 /* blueButton.png */; };
+		866498C90F98239300B72B53 /* glossy_3d_blue_orbs2_059.png in Resources */ = {isa = PBXBuildFile; fileRef = 864DC3060F76C92F00940827 /* glossy_3d_blue_orbs2_059.png */; };
+		866498CA0F98239300B72B53 /* glossy_3d_blue_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 864DC3080F76C94000940827 /* glossy_3d_blue_plane.png */; };
+		866498CB0F98239300B72B53 /* expedia_itinerary.html in Resources */ = {isa = PBXBuildFile; fileRef = 8602CC710F79C5800003545B /* expedia_itinerary.html */; };
+		866498CC0F98239300B72B53 /* HTMLDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8602CC880F79D6A80003545B /* HTMLDetailView.xib */; };
+		866498CD0F98239300B72B53 /* itn-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 8602CCD80F79DC820003545B /* itn-detail.html */; };
+		866498CE0F98239300B72B53 /* pants_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8639FBC30F7C3A09000CDDA9 /* pants_icon.png */; };
+		866498CF0F98239300B72B53 /* ItineraryPreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626F9FC0F9130F400C3A673 /* ItineraryPreView.xib */; };
+		866498D00F98239300B72B53 /* VoucherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626FAE70F9140DB00C3A673 /* VoucherView.xib */; };
+		866498D30F98239300B72B53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		866498D40F98239300B72B53 /* NavAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NavAppDelegate.m */; };
+		866498D50F98239300B72B53 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC644800E364645009A5515 /* RootViewController.m */; };
+		866498D60F98239300B72B53 /* ExpediaBuddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D4F70F6F3553004C7CC4 /* ExpediaBuddyViewController.m */; };
+		866498D70F98239300B72B53 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D52B0F6F3D64004C7CC4 /* XPathQuery.m */; };
+		866498D80F98239300B72B53 /* FirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D6490F6F49F4004C7CC4 /* FirstLevelViewController.m */; };
+		866498D90F98239300B72B53 /* Itinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F7F7E0F71DBF5009288EA /* Itinerary.m */; };
+		866498DA0F98239300B72B53 /* ItinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867855C90F71F1F00078FC2B /* ItinsViewController.m */; };
+		866498DB0F98239300B72B53 /* ExpediaSiteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670BFC70F76EBC100B4CDC4 /* ExpediaSiteInterface.m */; };
+		866498DC0F98239300B72B53 /* ExpediaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670C0650F76FE4700B4CDC4 /* ExpediaUtils.m */; };
+		866498DD0F98239300B72B53 /* HTMLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602CC8B0F79D6CD0003545B /* HTMLDetailViewController.m */; };
+		866498DE0F98239300B72B53 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639FC210F7C4A91000CDDA9 /* DataManager.m */; };
+		866498DF0F98239300B72B53 /* ExbuddiaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639FC3D0F7C4BA9000CDDA9 /* ExbuddiaData.m */; };
+		866498E00F98239300B72B53 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615F2280F81AB61001739D7 /* Reachability.m */; };
+		866498E10F98239300B72B53 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615F2BC0F81C06C001739D7 /* SFHFKeychainUtils.m */; };
+		866498E20F98239300B72B53 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EBF1350F79BC6E00C8B434 /* RegexKitLite.m */; };
+		866498E30F98239300B72B53 /* ItineraryPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626F9EE0F91301D00C3A673 /* ItineraryPreViewController.m */; };
+		866498E40F98239300B72B53 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAB2E80F9267560090BDA6 /* MockPhotoSource.m */; };
+		866498E60F98239300B72B53 /* RKLMatchEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB09A70F938F700065D00C /* RKLMatchEnumerator.m */; };
+		866498E70F98239300B72B53 /* Voucher.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB0A420F93A18A0065D00C /* Voucher.m */; };
+		866498E80F98239300B72B53 /* VoucherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E39A1F0F93EB0400F58ABA /* VoucherViewController.m */; };
+		866498EA0F98239300B72B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		866498EB0F98239300B72B53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		866498EC0F98239300B72B53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC6448D0E365214009A5515 /* CoreGraphics.framework */; };
+		866498ED0F98239300B72B53 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EBF1490F79BEF900C8B434 /* libicucore.dylib */; };
+		866498EE0F98239300B72B53 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EBF14C0F79BF2C00C8B434 /* libxml2.dylib */; };
+		866498EF0F98239300B72B53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615F2330F81ABDD001739D7 /* SystemConfiguration.framework */; };
+		866498F00F98239300B72B53 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615F2C80F81C108001739D7 /* Security.framework */; };
+		866498F10F98239300B72B53 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86045C950F85A8070063653F /* CoreLocation.framework */; };
+		866498F20F98239300B72B53 /* libFlurryWithLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86045C9D0F85A82D0063653F /* libFlurryWithLocation.a */; };
+		866498F40F98239300B72B53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DAB28F0F9257C70090BDA6 /* QuartzCore.framework */; };
+		866499000F9823BD00B72B53 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		866499010F9823BD00B72B53 /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1C0E367D670046019F /* disclosureButtonControllerIcon.png */; };
+		866499020F9823BD00B72B53 /* detailEditIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1D0E367D670046019F /* detailEditIcon.png */; };
+		866499030F9823BD00B72B53 /* deleteMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1E0E367D670046019F /* deleteMeIcon.png */; };
+		866499040F9823BD00B72B53 /* rowControlsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE1F0E367D670046019F /* rowControlsIcon.png */; };
+		866499050F9823BD00B72B53 /* checkmarkControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE200E367D670046019F /* checkmarkControllerIcon.png */; };
+		866499060F9823BD00B72B53 /* moveMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1FE210E367D670046019F /* moveMeIcon.png */; };
+		866499090F9823BD00B72B53 /* ExpediaBuddyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5760F6F4293004C7CC4 /* ExpediaBuddyViewController.xib */; };
+		8664990A0F9823BD00B72B53 /* ItineraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5770F6F4293004C7CC4 /* ItineraryView.xib */; };
+		8664990B0F9823BD00B72B53 /* hdr_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D57E0F6F42BF004C7CC4 /* hdr_logo.png */; };
+		8664990C0F9823BD00B72B53 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D57F0F6F42BF004C7CC4 /* whiteButton.png */; };
+		8664990D0F9823BD00B72B53 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8609D5800F6F42BF004C7CC4 /* blueButton.png */; };
+		8664990F0F9823BD00B72B53 /* glossy_3d_blue_orbs2_059.png in Resources */ = {isa = PBXBuildFile; fileRef = 864DC3060F76C92F00940827 /* glossy_3d_blue_orbs2_059.png */; };
+		866499100F9823BD00B72B53 /* glossy_3d_blue_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 864DC3080F76C94000940827 /* glossy_3d_blue_plane.png */; };
+		866499110F9823BD00B72B53 /* expedia_itinerary.html in Resources */ = {isa = PBXBuildFile; fileRef = 8602CC710F79C5800003545B /* expedia_itinerary.html */; };
+		866499120F9823BD00B72B53 /* HTMLDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8602CC880F79D6A80003545B /* HTMLDetailView.xib */; };
+		866499130F9823BD00B72B53 /* itn-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 8602CCD80F79DC820003545B /* itn-detail.html */; };
+		866499140F9823BD00B72B53 /* pants_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8639FBC30F7C3A09000CDDA9 /* pants_icon.png */; };
+		866499150F9823BD00B72B53 /* ItineraryPreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626F9FC0F9130F400C3A673 /* ItineraryPreView.xib */; };
+		866499160F9823BD00B72B53 /* VoucherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626FAE70F9140DB00C3A673 /* VoucherView.xib */; };
+		866499190F9823BD00B72B53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		8664991A0F9823BD00B72B53 /* NavAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NavAppDelegate.m */; };
+		8664991B0F9823BD00B72B53 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC644800E364645009A5515 /* RootViewController.m */; };
+		8664991C0F9823BD00B72B53 /* ExpediaBuddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D4F70F6F3553004C7CC4 /* ExpediaBuddyViewController.m */; };
+		8664991D0F9823BD00B72B53 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D52B0F6F3D64004C7CC4 /* XPathQuery.m */; };
+		8664991E0F9823BD00B72B53 /* FirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8609D6490F6F49F4004C7CC4 /* FirstLevelViewController.m */; };
+		8664991F0F9823BD00B72B53 /* Itinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F7F7E0F71DBF5009288EA /* Itinerary.m */; };
+		866499200F9823BD00B72B53 /* ItinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867855C90F71F1F00078FC2B /* ItinsViewController.m */; };
+		866499210F9823BD00B72B53 /* ExpediaSiteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670BFC70F76EBC100B4CDC4 /* ExpediaSiteInterface.m */; };
+		866499220F9823BD00B72B53 /* ExpediaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670C0650F76FE4700B4CDC4 /* ExpediaUtils.m */; };
+		866499230F9823BD00B72B53 /* HTMLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602CC8B0F79D6CD0003545B /* HTMLDetailViewController.m */; };
+		866499240F9823BD00B72B53 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639FC210F7C4A91000CDDA9 /* DataManager.m */; };
+		866499250F9823BD00B72B53 /* ExbuddiaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639FC3D0F7C4BA9000CDDA9 /* ExbuddiaData.m */; };
+		866499260F9823BD00B72B53 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615F2280F81AB61001739D7 /* Reachability.m */; };
+		866499270F9823BD00B72B53 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615F2BC0F81C06C001739D7 /* SFHFKeychainUtils.m */; };
+		866499280F9823BD00B72B53 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EBF1350F79BC6E00C8B434 /* RegexKitLite.m */; };
+		866499290F9823BD00B72B53 /* ItineraryPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626F9EE0F91301D00C3A673 /* ItineraryPreViewController.m */; };
+		8664992A0F9823BD00B72B53 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAB2E80F9267560090BDA6 /* MockPhotoSource.m */; };
+		8664992C0F9823BD00B72B53 /* RKLMatchEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB09A70F938F700065D00C /* RKLMatchEnumerator.m */; };
+		8664992D0F9823BD00B72B53 /* Voucher.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB0A420F93A18A0065D00C /* Voucher.m */; };
+		8664992E0F9823BD00B72B53 /* VoucherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E39A1F0F93EB0400F58ABA /* VoucherViewController.m */; };
+		866499300F9823BD00B72B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		866499310F9823BD00B72B53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		866499320F9823BD00B72B53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC6448D0E365214009A5515 /* CoreGraphics.framework */; };
+		866499330F9823BD00B72B53 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EBF1490F79BEF900C8B434 /* libicucore.dylib */; };
+		866499340F9823BD00B72B53 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EBF14C0F79BF2C00C8B434 /* libxml2.dylib */; };
+		866499350F9823BD00B72B53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615F2330F81ABDD001739D7 /* SystemConfiguration.framework */; };
+		866499360F9823BD00B72B53 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615F2C80F81C108001739D7 /* Security.framework */; };
+		866499370F9823BD00B72B53 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86045C950F85A8070063653F /* CoreLocation.framework */; };
+		866499380F9823BD00B72B53 /* libFlurryWithLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86045C9D0F85A82D0063653F /* libFlurryWithLocation.a */; };
+		8664993A0F9823BD00B72B53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DAB28F0F9257C70090BDA6 /* QuartzCore.framework */; };
+		8664997D0F98288200B72B53 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8664997C0F98288200B72B53 /* icon-57.png */; };
+		8664997E0F98288B00B72B53 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8664997C0F98288200B72B53 /* icon-57.png */; };
+		8664997F0F98288B00B72B53 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8664997C0F98288200B72B53 /* icon-57.png */; };
+		866499D20F982D8A00B72B53 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 866499D10F982D8A00B72B53 /* Entitlements.plist */; };
+		8670BFC80F76EBC100B4CDC4 /* ExpediaSiteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670BFC70F76EBC100B4CDC4 /* ExpediaSiteInterface.m */; };
+		8670C0660F76FE4700B4CDC4 /* ExpediaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670C0650F76FE4700B4CDC4 /* ExpediaUtils.m */; };
+		867855CA0F71F1F00078FC2B /* ItinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867855C90F71F1F00078FC2B /* ItinsViewController.m */; };
+		868298A80F9FED1F00D8D1E0 /* InternetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 868298A70F9FED1F00D8D1E0 /* InternetImage.m */; };
+		868298A90F9FED1F00D8D1E0 /* InternetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 868298A70F9FED1F00D8D1E0 /* InternetImage.m */; };
+		868298AA0F9FED1F00D8D1E0 /* InternetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 868298A70F9FED1F00D8D1E0 /* InternetImage.m */; };
+		868299160F9FFC0300D8D1E0 /* ThreadRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 868299150F9FFC0300D8D1E0 /* ThreadRequestLoader.m */; };
+		868299170F9FFC0300D8D1E0 /* ThreadRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 868299150F9FFC0300D8D1E0 /* ThreadRequestLoader.m */; };
+		868299180F9FFC0300D8D1E0 /* ThreadRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 868299150F9FFC0300D8D1E0 /* ThreadRequestLoader.m */; };
+		868B147F0FA69617006D930B /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 868B147E0FA69617006D930B /* Three20.bundle */; };
+		868B14800FA69617006D930B /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 868B147E0FA69617006D930B /* Three20.bundle */; };
+		868B14810FA69617006D930B /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 868B147E0FA69617006D930B /* Three20.bundle */; };
+		86DAB2900F9257C70090BDA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DAB28F0F9257C70090BDA6 /* QuartzCore.framework */; };
+		86DAB2EB0F9267560090BDA6 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAB2E80F9267560090BDA6 /* MockPhotoSource.m */; };
+		86E39A200F93EB0400F58ABA /* VoucherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E39A1F0F93EB0400F58ABA /* VoucherViewController.m */; };
+		86EBF14A0F79BEF900C8B434 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EBF1490F79BEF900C8B434 /* libicucore.dylib */; };
+		86EBF14D0F79BF2C00C8B434 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EBF14C0F79BF2C00C8B434 /* libxml2.dylib */; };
+		86FB09A80F938F700065D00C /* RKLMatchEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB09A70F938F700065D00C /* RKLMatchEnumerator.m */; };
+		86FB0A430F93A18A0065D00C /* Voucher.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB0A420F93A18A0065D00C /* Voucher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8638EF3A0FA6AC0B007316BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8638EF360FA6AC0B007316BC /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+		8638EF590FA6AC38007316BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8638EF360FA6AC0B007316BC /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+		8638EF5B0FA6AC4B007316BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8638EF360FA6AC0B007316BC /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+		8638EF5D0FA6AC5D007316BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8638EF360FA6AC0B007316BC /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* NavAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* NavAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavAppDelegate.m; sourceTree = "<group>"; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F3866E20E367E7400338509 /* CheckListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListController.h; sourceTree = "<group>"; };
+		1F3866E30E367E7400338509 /* CheckListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListController.m; sourceTree = "<group>"; };
+		1F3866ED0E36803000338509 /* RowControlsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowControlsController.h; sourceTree = "<group>"; };
+		1F3866EE0E36803000338509 /* RowControlsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowControlsController.m; sourceTree = "<group>"; };
+		1F3866F30E3680CB00338509 /* MoveMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMeController.h; sourceTree = "<group>"; };
+		1F3866F40E3680CB00338509 /* MoveMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveMeController.m; sourceTree = "<group>"; };
+		1F3866F80E36819400338509 /* DeleteMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteMeController.h; sourceTree = "<group>"; };
+		1F3866F90E36819400338509 /* DeleteMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteMeController.m; sourceTree = "<group>"; };
+		1F3867060E36828100338509 /* President.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = President.h; sourceTree = "<group>"; };
+		1F3867070E36828100338509 /* President.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = President.m; sourceTree = "<group>"; };
+		1F38670A0E3682B900338509 /* PresidentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresidentsViewController.h; sourceTree = "<group>"; };
+		1F38670B0E3682B900338509 /* PresidentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresidentsViewController.m; sourceTree = "<group>"; };
+		1F38670D0E3682E700338509 /* PresidentDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresidentDetailController.h; sourceTree = "<group>"; };
+		1F38670E0E3682E700338509 /* PresidentDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresidentDetailController.m; sourceTree = "<group>"; };
+		1FA1FE1C0E367D670046019F /* disclosureButtonControllerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disclosureButtonControllerIcon.png; path = Images/disclosureButtonControllerIcon.png; sourceTree = "<group>"; };
+		1FA1FE1D0E367D670046019F /* detailEditIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detailEditIcon.png; path = Images/detailEditIcon.png; sourceTree = "<group>"; };
+		1FA1FE1E0E367D670046019F /* deleteMeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deleteMeIcon.png; path = Images/deleteMeIcon.png; sourceTree = "<group>"; };
+		1FA1FE1F0E367D670046019F /* rowControlsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rowControlsIcon.png; path = Images/rowControlsIcon.png; sourceTree = "<group>"; };
+		1FA1FE200E367D670046019F /* checkmarkControllerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmarkControllerIcon.png; path = Images/checkmarkControllerIcon.png; sourceTree = "<group>"; };
+		1FA1FE210E367D670046019F /* moveMeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moveMeIcon.png; path = Images/moveMeIcon.png; sourceTree = "<group>"; };
+		1FC6447F0E364645009A5515 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1FC644800E364645009A5515 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1FC644830E364FD3009A5515 /* SecondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelViewController.h; sourceTree = "<group>"; };
+		1FC644840E364FD3009A5515 /* SecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelViewController.m; sourceTree = "<group>"; };
+		1FC6448D0E365214009A5515 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FC6449C0E365412009A5515 /* DisclosureButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureButtonController.h; sourceTree = "<group>"; };
+		1FC6449D0E365412009A5515 /* DisclosureButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureButtonController.m; sourceTree = "<group>"; };
+		1FC6449F0E36541E009A5515 /* DisclosureDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureDetailController.h; sourceTree = "<group>"; };
+		1FC644A00E36541E009A5515 /* DisclosureDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureDetailController.m; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Nav_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nav_Prefix.pch; sourceTree = "<group>"; };
+		8602CC710F79C5800003545B /* expedia_itinerary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = expedia_itinerary.html; sourceTree = "<group>"; };
+		8602CC880F79D6A80003545B /* HTMLDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTMLDetailView.xib; sourceTree = "<group>"; };
+		8602CC8A0F79D6CD0003545B /* HTMLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDetailViewController.h; sourceTree = "<group>"; };
+		8602CC8B0F79D6CD0003545B /* HTMLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDetailViewController.m; sourceTree = "<group>"; };
+		8602CCD80F79DC820003545B /* itn-detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "itn-detail.html"; sourceTree = "<group>"; };
+		86045C950F85A8070063653F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		86045C9C0F85A82D0063653F /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
+		86045C9D0F85A82D0063653F /* libFlurryWithLocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryWithLocation.a; sourceTree = "<group>"; };
+		8609D4F60F6F3553004C7CC4 /* ExpediaBuddyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpediaBuddyViewController.h; sourceTree = "<group>"; };
+		8609D4F70F6F3553004C7CC4 /* ExpediaBuddyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpediaBuddyViewController.m; sourceTree = "<group>"; };
+		8609D4FA0F6F3553004C7CC4 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		8609D4FB0F6F3553004C7CC4 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		8609D5030F6F3553004C7CC4 /* ExpediaBuddyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpediaBuddyAppDelegate.h; sourceTree = "<group>"; };
+		8609D5040F6F3553004C7CC4 /* ExpediaBuddyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpediaBuddyAppDelegate.m; sourceTree = "<group>"; };
+		8609D52A0F6F3D64004C7CC4 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		8609D52B0F6F3D64004C7CC4 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		8609D5760F6F4293004C7CC4 /* ExpediaBuddyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpediaBuddyViewController.xib; sourceTree = "<group>"; };
+		8609D5770F6F4293004C7CC4 /* ItineraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItineraryView.xib; sourceTree = "<group>"; };
+		8609D57E0F6F42BF004C7CC4 /* hdr_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdr_logo.png; sourceTree = "<group>"; };
+		8609D57F0F6F42BF004C7CC4 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		8609D5800F6F42BF004C7CC4 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		8609D6480F6F49F4004C7CC4 /* FirstLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLevelViewController.h; sourceTree = "<group>"; };
+		8609D6490F6F49F4004C7CC4 /* FirstLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLevelViewController.m; sourceTree = "<group>"; };
+		8615F2270F81AB61001739D7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8615F2280F81AB61001739D7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8615F2330F81ABDD001739D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8615F2BB0F81C06C001739D7 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		8615F2BC0F81C06C001739D7 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		8615F2C80F81C108001739D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		861F7D570F6F6159009288EA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		861F7D580F6F6159009288EA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		861F7F7D0F71DBF5009288EA /* Itinerary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itinerary.h; sourceTree = "<group>"; };
+		861F7F7E0F71DBF5009288EA /* Itinerary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itinerary.m; sourceTree = "<group>"; };
+		8626F9ED0F91301D00C3A673 /* ItineraryPreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItineraryPreViewController.h; path = ../ItineraryPreViewController.h; sourceTree = "<group>"; };
+		8626F9EE0F91301D00C3A673 /* ItineraryPreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItineraryPreViewController.m; path = ../ItineraryPreViewController.m; sourceTree = "<group>"; };
+		8626F9FC0F9130F400C3A673 /* ItineraryPreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItineraryPreView.xib; sourceTree = "<group>"; };
+		8626FAE70F9140DB00C3A673 /* VoucherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherView.xib; sourceTree = "<group>"; };
+		8638EE4B0FA698B9007316BC /* Exbuddia-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exbuddia-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8638EE4F0FA698B9007316BC /* Exbuddia-Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exbuddia-Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8638EF010FA6AB78007316BC /* Exbuddia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exbuddia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8638EF360FA6AC0B007316BC /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = "../../../external-lib/three20/src/Three20.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8638EFFC0FA7CF72007316BC /* GeoNamesSiteInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoNamesSiteInterface.h; sourceTree = "<group>"; };
+		8638EFFD0FA7CF72007316BC /* GeoNamesSiteInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoNamesSiteInterface.m; sourceTree = "<group>"; };
+		8639FBC30F7C3A09000CDDA9 /* pants_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pants_icon.png; sourceTree = "<group>"; };
+		8639FC200F7C4A91000CDDA9 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		8639FC210F7C4A91000CDDA9 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		8639FC3C0F7C4BA9000CDDA9 /* ExbuddiaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExbuddiaData.h; sourceTree = "<group>"; };
+		8639FC3D0F7C4BA9000CDDA9 /* ExbuddiaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExbuddiaData.m; sourceTree = "<group>"; };
+		864DC1100F76861500940827 /* CompleteItineraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteItineraryViewController.h; sourceTree = "<group>"; };
+		864DC1110F76861500940827 /* CompleteItineraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteItineraryViewController.m; sourceTree = "<group>"; };
+		864DC3060F76C92F00940827 /* glossy_3d_blue_orbs2_059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossy_3d_blue_orbs2_059.png; sourceTree = "<group>"; };
+		864DC3080F76C94000940827 /* glossy_3d_blue_plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossy_3d_blue_plane.png; sourceTree = "<group>"; };
+		864DC31E0F76CCF800940827 /* ItineraryBasicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItineraryBasicDetailViewController.h; sourceTree = "<group>"; };
+		864DC31F0F76CCF800940827 /* ItineraryBasicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItineraryBasicDetailViewController.m; sourceTree = "<group>"; };
+		866498B10F98237200B72B53 /* Exbuddia - Beta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exbuddia - Beta-Info.plist"; sourceTree = "<group>"; };
+		866499410F9823BD00B72B53 /* Info copy 2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy 2.plist"; sourceTree = "<group>"; };
+		8664997C0F98288200B72B53 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		866499D10F982D8A00B72B53 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		8670BFC60F76EBC100B4CDC4 /* ExpediaSiteInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpediaSiteInterface.h; sourceTree = "<group>"; };
+		8670BFC70F76EBC100B4CDC4 /* ExpediaSiteInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpediaSiteInterface.m; sourceTree = "<group>"; };
+		8670C0640F76FE4700B4CDC4 /* ExpediaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpediaUtils.h; sourceTree = "<group>"; };
+		8670C0650F76FE4700B4CDC4 /* ExpediaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpediaUtils.m; sourceTree = "<group>"; };
+		867855C80F71F1F00078FC2B /* ItinsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItinsViewController.h; sourceTree = "<group>"; };
+		867855C90F71F1F00078FC2B /* ItinsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItinsViewController.m; sourceTree = "<group>"; };
+		867F8D810F746E70005FC372 /* TabRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabRootViewController.h; sourceTree = "<group>"; };
+		867F8D820F746E70005FC372 /* TabRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabRootViewController.m; sourceTree = "<group>"; };
+		868298A60F9FED1F00D8D1E0 /* InternetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetImage.h; sourceTree = "<group>"; };
+		868298A70F9FED1F00D8D1E0 /* InternetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternetImage.m; sourceTree = "<group>"; };
+		868299140F9FFC0300D8D1E0 /* ThreadRequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadRequestLoader.h; sourceTree = "<group>"; };
+		868299150F9FFC0300D8D1E0 /* ThreadRequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadRequestLoader.m; sourceTree = "<group>"; };
+		868B147E0FA69617006D930B /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = "../../../external-lib/three20/src/Three20.bundle"; sourceTree = SOURCE_ROOT; };
+		86DAB28F0F9257C70090BDA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SOURCE_ROOT; };
+		86DAB2E70F9267560090BDA6 /* MockPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockPhotoSource.h; path = Classes/MockPhotoSource.h; sourceTree = SOURCE_ROOT; };
+		86DAB2E80F9267560090BDA6 /* MockPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockPhotoSource.m; path = Classes/MockPhotoSource.m; sourceTree = SOURCE_ROOT; };
+		86E39A1E0F93EB0400F58ABA /* VoucherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoucherViewController.h; sourceTree = "<group>"; };
+		86E39A1F0F93EB0400F58ABA /* VoucherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoucherViewController.m; sourceTree = "<group>"; };
+		86EBF1350F79BC6E00C8B434 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		86EBF1360F79BC6E00C8B434 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		86EBF1490F79BEF900C8B434 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		86EBF14C0F79BF2C00C8B434 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		86FB09A60F938F700065D00C /* RKLMatchEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKLMatchEnumerator.h; sourceTree = "<group>"; };
+		86FB09A70F938F700065D00C /* RKLMatchEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKLMatchEnumerator.m; sourceTree = "<group>"; };
+		86FB0A410F93A18A0065D00C /* Voucher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voucher.h; sourceTree = "<group>"; };
+		86FB0A420F93A18A0065D00C /* Voucher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voucher.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1FC6448E0E365214009A5515 /* CoreGraphics.framework in Frameworks */,
+				86EBF14A0F79BEF900C8B434 /* libicucore.dylib in Frameworks */,
+				86EBF14D0F79BF2C00C8B434 /* libxml2.dylib in Frameworks */,
+				8615F2340F81ABDD001739D7 /* SystemConfiguration.framework in Frameworks */,
+				8615F2C90F81C108001739D7 /* Security.framework in Frameworks */,
+				86045C960F85A8070063653F /* CoreLocation.framework in Frameworks */,
+				86045C9E0F85A82D0063653F /* libFlurryWithLocation.a in Frameworks */,
+				86DAB2900F9257C70090BDA6 /* QuartzCore.framework in Frameworks */,
+				8638EF3C0FA6AC14007316BC /* libThree20.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866498E90F98239300B72B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866498EA0F98239300B72B53 /* Foundation.framework in Frameworks */,
+				866498EB0F98239300B72B53 /* UIKit.framework in Frameworks */,
+				866498EC0F98239300B72B53 /* CoreGraphics.framework in Frameworks */,
+				866498ED0F98239300B72B53 /* libicucore.dylib in Frameworks */,
+				866498EE0F98239300B72B53 /* libxml2.dylib in Frameworks */,
+				866498EF0F98239300B72B53 /* SystemConfiguration.framework in Frameworks */,
+				866498F00F98239300B72B53 /* Security.framework in Frameworks */,
+				866498F10F98239300B72B53 /* CoreLocation.framework in Frameworks */,
+				866498F20F98239300B72B53 /* libFlurryWithLocation.a in Frameworks */,
+				866498F40F98239300B72B53 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8664992F0F9823BD00B72B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866499300F9823BD00B72B53 /* Foundation.framework in Frameworks */,
+				866499310F9823BD00B72B53 /* UIKit.framework in Frameworks */,
+				866499320F9823BD00B72B53 /* CoreGraphics.framework in Frameworks */,
+				866499330F9823BD00B72B53 /* libicucore.dylib in Frameworks */,
+				866499340F9823BD00B72B53 /* libxml2.dylib in Frameworks */,
+				866499350F9823BD00B72B53 /* SystemConfiguration.framework in Frameworks */,
+				866499360F9823BD00B72B53 /* Security.framework in Frameworks */,
+				866499370F9823BD00B72B53 /* CoreLocation.framework in Frameworks */,
+				866499380F9823BD00B72B53 /* libFlurryWithLocation.a in Frameworks */,
+				8664993A0F9823BD00B72B53 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8638EFFB0FA7CF5C007316BC /* Geo */,
+				868298A20F9FED0800D8D1E0 /* Net */,
+				86DAB2E20F9267410090BDA6 /* ImageViewer */,
+				1D3623240D0F684500981E51 /* NavAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NavAppDelegate.m */,
+				8615F20A0F81AB4F001739D7 /* Utils */,
+				8639FBFF0F7C453E000CDDA9 /* Persistence */,
+				8609D4D50F6F353C004C7CC4 /* Expedia */,
+				861F7F7C0F71DBE1009288EA /* Model */,
+				8609D5A50F6F440E004C7CC4 /* Views */,
+				8609D4C70F6F34D6004C7CC4 /* Navigation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8638EE4B0FA698B9007316BC /* Exbuddia-Dev.app */,
+				8638EE4F0FA698B9007316BC /* Exbuddia-Beta.app */,
+				8638EF010FA6AB78007316BC /* Exbuddia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FA1FE090E367D4D0046019F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				864DC2FE0F76C92000940827 /* icons */,
+				8609D57E0F6F42BF004C7CC4 /* hdr_logo.png */,
+				8609D57F0F6F42BF004C7CC4 /* whiteButton.png */,
+				8609D5800F6F42BF004C7CC4 /* blueButton.png */,
+				1FA1FE1C0E367D670046019F /* disclosureButtonControllerIcon.png */,
+				1FA1FE1D0E367D670046019F /* detailEditIcon.png */,
+				1FA1FE1E0E367D670046019F /* deleteMeIcon.png */,
+				1FA1FE1F0E367D670046019F /* rowControlsIcon.png */,
+				1FA1FE200E367D670046019F /* checkmarkControllerIcon.png */,
+				1FA1FE210E367D670046019F /* moveMeIcon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				868511AF0F8C279C00320B63 /* Reference */,
+				86045C9B0F85A82D0063653F /* FlurryLibWithLocation */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				866498B10F98237200B72B53 /* Exbuddia - Beta-Info.plist */,
+				866499D10F982D8A00B72B53 /* Entitlements.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8602CC700F79C5580003545B /* HTML */,
+				32CA4F630368D1EE00C91783 /* Nav_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				868B147E0FA69617006D930B /* Three20.bundle */,
+				864DC0950F767F7600940827 /* Views */,
+				1FA1FE090E367D4D0046019F /* Images */,
+				8639FBC30F7C3A09000CDDA9 /* pants_icon.png */,
+				8664997C0F98288200B72B53 /* icon-57.png */,
+				8602CCD80F79DC820003545B /* itn-detail.html */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				866499410F9823BD00B72B53 /* Info copy 2.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8638EF360FA6AC0B007316BC /* Three20.xcodeproj */,
+				86DAB28F0F9257C70090BDA6 /* QuartzCore.framework */,
+				86045C950F85A8070063653F /* CoreLocation.framework */,
+				8615F2C80F81C108001739D7 /* Security.framework */,
+				8615F2330F81ABDD001739D7 /* SystemConfiguration.framework */,
+				86EBF14C0F79BF2C00C8B434 /* libxml2.dylib */,
+				86EBF1490F79BEF900C8B434 /* libicucore.dylib */,
+				1FC6448D0E365214009A5515 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8602CC700F79C5580003545B /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				8602CC710F79C5800003545B /* expedia_itinerary.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+		86045C9B0F85A82D0063653F /* FlurryLibWithLocation */ = {
+			isa = PBXGroup;
+			children = (
+				86045C9C0F85A82D0063653F /* FlurryAPI.h */,
+				86045C9D0F85A82D0063653F /* libFlurryWithLocation.a */,
+			);
+			path = FlurryLibWithLocation;
+			sourceTree = "<group>";
+		};
+		8609D4C70F6F34D6004C7CC4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8609D6480F6F49F4004C7CC4 /* FirstLevelViewController.h */,
+				8609D6490F6F49F4004C7CC4 /* FirstLevelViewController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		8609D4D50F6F353C004C7CC4 /* Expedia */ = {
+			isa = PBXGroup;
+			children = (
+				86FB09A50F938F330065D00C /* Regex Parsers */,
+				8609D4FE0F6F3553004C7CC4 /* XPath Parsers */,
+				8670BFC60F76EBC100B4CDC4 /* ExpediaSiteInterface.h */,
+				8670BFC70F76EBC100B4CDC4 /* ExpediaSiteInterface.m */,
+				8670C0640F76FE4700B4CDC4 /* ExpediaUtils.h */,
+				8670C0650F76FE4700B4CDC4 /* ExpediaUtils.m */,
+			);
+			name = Expedia;
+			sourceTree = "<group>";
+		};
+		8609D4F50F6F3553004C7CC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8609D4FA0F6F3553004C7CC4 /* BlueViewController.h */,
+				8609D4FB0F6F3553004C7CC4 /* BlueViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8609D4FE0F6F3553004C7CC4 /* XPath Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				8609D52A0F6F3D64004C7CC4 /* XPathQuery.h */,
+				8609D52B0F6F3D64004C7CC4 /* XPathQuery.m */,
+			);
+			name = "XPath Parsers";
+			sourceTree = "<group>";
+		};
+		8609D5A50F6F440E004C7CC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8626F9ED0F91301D00C3A673 /* ItineraryPreViewController.h */,
+				8626F9EE0F91301D00C3A673 /* ItineraryPreViewController.m */,
+				8609D4F60F6F3553004C7CC4 /* ExpediaBuddyViewController.h */,
+				8609D4F70F6F3553004C7CC4 /* ExpediaBuddyViewController.m */,
+				867855C80F71F1F00078FC2B /* ItinsViewController.h */,
+				867855C90F71F1F00078FC2B /* ItinsViewController.m */,
+				8602CC8A0F79D6CD0003545B /* HTMLDetailViewController.h */,
+				8602CC8B0F79D6CD0003545B /* HTMLDetailViewController.m */,
+				1FC6447F0E364645009A5515 /* RootViewController.h */,
+				1FC644800E364645009A5515 /* RootViewController.m */,
+				86E39A1E0F93EB0400F58ABA /* VoucherViewController.h */,
+				86E39A1F0F93EB0400F58ABA /* VoucherViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8615F20A0F81AB4F001739D7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				86EBF1340F79BC6E00C8B434 /* RegexKit Lite */,
+				8615F2270F81AB61001739D7 /* Reachability.h */,
+				8615F2280F81AB61001739D7 /* Reachability.m */,
+				8615F2BB0F81C06C001739D7 /* SFHFKeychainUtils.h */,
+				8615F2BC0F81C06C001739D7 /* SFHFKeychainUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		861F7F7C0F71DBE1009288EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				861F7F7D0F71DBF5009288EA /* Itinerary.h */,
+				861F7F7E0F71DBF5009288EA /* Itinerary.m */,
+				8639FC3C0F7C4BA9000CDDA9 /* ExbuddiaData.h */,
+				8639FC3D0F7C4BA9000CDDA9 /* ExbuddiaData.m */,
+				86FB0A410F93A18A0065D00C /* Voucher.h */,
+				86FB0A420F93A18A0065D00C /* Voucher.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8638EF370FA6AC0B007316BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8638EF3B0FA6AC0B007316BC /* libThree20.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8638EFFB0FA7CF5C007316BC /* Geo */ = {
+			isa = PBXGroup;
+			children = (
+				8638EFFC0FA7CF72007316BC /* GeoNamesSiteInterface.h */,
+				8638EFFD0FA7CF72007316BC /* GeoNamesSiteInterface.m */,
+			);
+			name = Geo;
+			sourceTree = "<group>";
+		};
+		8639FBFF0F7C453E000CDDA9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				8639FC200F7C4A91000CDDA9 /* DataManager.h */,
+				8639FC210F7C4A91000CDDA9 /* DataManager.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		864DC0950F767F7600940827 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8609D5760F6F4293004C7CC4 /* ExpediaBuddyViewController.xib */,
+				8609D5770F6F4293004C7CC4 /* ItineraryView.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8602CC880F79D6A80003545B /* HTMLDetailView.xib */,
+				8626F9FC0F9130F400C3A673 /* ItineraryPreView.xib */,
+				8626FAE70F9140DB00C3A673 /* VoucherView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		864DC2FE0F76C92000940827 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				864DC3080F76C94000940827 /* glossy_3d_blue_plane.png */,
+				864DC3060F76C92F00940827 /* glossy_3d_blue_orbs2_059.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		867F8D650F746BC2005FC372 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				867F8D810F746E70005FC372 /* TabRootViewController.h */,
+				867F8D820F746E70005FC372 /* TabRootViewController.m */,
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		868298A20F9FED0800D8D1E0 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				868299140F9FFC0300D8D1E0 /* ThreadRequestLoader.h */,
+				868299150F9FFC0300D8D1E0 /* ThreadRequestLoader.m */,
+				868298A60F9FED1F00D8D1E0 /* InternetImage.h */,
+				868298A70F9FED1F00D8D1E0 /* InternetImage.m */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		868511AF0F8C279C00320B63 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				868511F50F8C32DE00320B63 /* Navigation */,
+				861F7D570F6F6159009288EA /* DetailViewController.h */,
+				861F7D580F6F6159009288EA /* DetailViewController.m */,
+				867F8D650F746BC2005FC372 /* Sections */,
+				864DC1100F76861500940827 /* CompleteItineraryViewController.h */,
+				864DC1110F76861500940827 /* CompleteItineraryViewController.m */,
+				1FC6449F0E36541E009A5515 /* DisclosureDetailController.h */,
+				1FC644A00E36541E009A5515 /* DisclosureDetailController.m */,
+				864DC31E0F76CCF800940827 /* ItineraryBasicDetailViewController.h */,
+				864DC31F0F76CCF800940827 /* ItineraryBasicDetailViewController.m */,
+				8609D5030F6F3553004C7CC4 /* ExpediaBuddyAppDelegate.h */,
+				8609D5040F6F3553004C7CC4 /* ExpediaBuddyAppDelegate.m */,
+				8609D4F50F6F3553004C7CC4 /* Controllers */,
+			);
+			name = Reference;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		868511F50F8C32DE00320B63 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1FC644830E364FD3009A5515 /* SecondLevelViewController.h */,
+				1FC644840E364FD3009A5515 /* SecondLevelViewController.m */,
+				1FC6449C0E365412009A5515 /* DisclosureButtonController.h */,
+				1FC6449D0E365412009A5515 /* DisclosureButtonController.m */,
+				1F3866E20E367E7400338509 /* CheckListController.h */,
+				1F3866E30E367E7400338509 /* CheckListController.m */,
+				1F3866ED0E36803000338509 /* RowControlsController.h */,
+				1F3866EE0E36803000338509 /* RowControlsController.m */,
+				1F3866F30E3680CB00338509 /* MoveMeController.h */,
+				1F3866F40E3680CB00338509 /* MoveMeController.m */,
+				1F3866F80E36819400338509 /* DeleteMeController.h */,
+				1F3866F90E36819400338509 /* DeleteMeController.m */,
+				1F3867060E36828100338509 /* President.h */,
+				1F3867070E36828100338509 /* President.m */,
+				1F38670A0E3682B900338509 /* PresidentsViewController.h */,
+				1F38670B0E3682B900338509 /* PresidentsViewController.m */,
+				1F38670D0E3682E700338509 /* PresidentDetailController.h */,
+				1F38670E0E3682E700338509 /* PresidentDetailController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		86DAB2E20F9267410090BDA6 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				86DAB2E70F9267560090BDA6 /* MockPhotoSource.h */,
+				86DAB2E80F9267560090BDA6 /* MockPhotoSource.m */,
+			);
+			name = ImageViewer;
+			sourceTree = "<group>";
+		};
+		86EBF1340F79BC6E00C8B434 /* RegexKit Lite */ = {
+			isa = PBXGroup;
+			children = (
+				86EBF1350F79BC6E00C8B434 /* RegexKitLite.m */,
+				86EBF1360F79BC6E00C8B434 /* RegexKitLite.h */,
+			);
+			name = "RegexKit Lite";
+			sourceTree = "<group>";
+		};
+		86FB09A50F938F330065D00C /* Regex Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				86FB09A60F938F700065D00C /* RKLMatchEnumerator.h */,
+				86FB09A70F938F700065D00C /* RKLMatchEnumerator.m */,
+			);
+			name = "Regex Parsers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Exbuddia - Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Exbuddia - Dev" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8638EF5A0FA6AC38007316BC /* PBXTargetDependency */,
+			);
+			name = "Exbuddia - Dev";
+			productName = Nav;
+			productReference = 8638EE4B0FA698B9007316BC /* Exbuddia-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		866498B60F98239300B72B53 /* Exbuddia - Distribution Store */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 866498F50F98239300B72B53 /* Build configuration list for PBXNativeTarget "Exbuddia - Distribution Store" */;
+			buildPhases = (
+				866498B90F98239300B72B53 /* Resources */,
+				866498D20F98239300B72B53 /* Sources */,
+				866498E90F98239300B72B53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8638EF5C0FA6AC4B007316BC /* PBXTargetDependency */,
+			);
+			name = "Exbuddia - Distribution Store";
+			productName = Nav;
+			productReference = 8638EF010FA6AB78007316BC /* Exbuddia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		866498FC0F9823BD00B72B53 /* Exbuddia - Distribution Adhoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8664993B0F9823BD00B72B53 /* Build configuration list for PBXNativeTarget "Exbuddia - Distribution Adhoc" */;
+			buildPhases = (
+				866498FF0F9823BD00B72B53 /* Resources */,
+				866499180F9823BD00B72B53 /* Sources */,
+				8664992F0F9823BD00B72B53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8638EF5E0FA6AC5D007316BC /* PBXTargetDependency */,
+			);
+			name = "Exbuddia - Distribution Adhoc";
+			productName = Nav;
+			productReference = 8638EE4F0FA698B9007316BC /* Exbuddia-Beta.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ExpBuddyNav" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8638EF370FA6AC0B007316BC /* Products */;
+					ProjectRef = 8638EF360FA6AC0B007316BC /* Three20.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Exbuddia - Dev */,
+				866498B60F98239300B72B53 /* Exbuddia - Distribution Store */,
+				866498FC0F9823BD00B72B53 /* Exbuddia - Distribution Adhoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8638EF3B0FA6AC0B007316BC /* libThree20.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20.a;
+			remoteRef = 8638EF3A0FA6AC0B007316BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				1FA1FE220E367D670046019F /* disclosureButtonControllerIcon.png in Resources */,
+				1FA1FE230E367D670046019F /* detailEditIcon.png in Resources */,
+				1FA1FE240E367D670046019F /* deleteMeIcon.png in Resources */,
+				1FA1FE250E367D670046019F /* rowControlsIcon.png in Resources */,
+				1FA1FE260E367D670046019F /* checkmarkControllerIcon.png in Resources */,
+				1FA1FE270E367D670046019F /* moveMeIcon.png in Resources */,
+				8609D5780F6F4293004C7CC4 /* ExpediaBuddyViewController.xib in Resources */,
+				8609D5790F6F4293004C7CC4 /* ItineraryView.xib in Resources */,
+				8609D5810F6F42BF004C7CC4 /* hdr_logo.png in Resources */,
+				8609D5820F6F42BF004C7CC4 /* whiteButton.png in Resources */,
+				8609D5830F6F42BF004C7CC4 /* blueButton.png in Resources */,
+				864DC3070F76C92F00940827 /* glossy_3d_blue_orbs2_059.png in Resources */,
+				864DC3090F76C94000940827 /* glossy_3d_blue_plane.png in Resources */,
+				8602CC720F79C5800003545B /* expedia_itinerary.html in Resources */,
+				8602CC890F79D6A80003545B /* HTMLDetailView.xib in Resources */,
+				8602CCD90F79DC820003545B /* itn-detail.html in Resources */,
+				8639FBC40F7C3A09000CDDA9 /* pants_icon.png in Resources */,
+				8626F9FD0F9130F400C3A673 /* ItineraryPreView.xib in Resources */,
+				8626FAE80F9140DB00C3A673 /* VoucherView.xib in Resources */,
+				8664997D0F98288200B72B53 /* icon-57.png in Resources */,
+				868B14810FA69617006D930B /* Three20.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866498B90F98239300B72B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866498BA0F98239300B72B53 /* MainWindow.xib in Resources */,
+				866498BB0F98239300B72B53 /* disclosureButtonControllerIcon.png in Resources */,
+				866498BC0F98239300B72B53 /* detailEditIcon.png in Resources */,
+				866498BD0F98239300B72B53 /* deleteMeIcon.png in Resources */,
+				866498BE0F98239300B72B53 /* rowControlsIcon.png in Resources */,
+				866498BF0F98239300B72B53 /* checkmarkControllerIcon.png in Resources */,
+				866498C00F98239300B72B53 /* moveMeIcon.png in Resources */,
+				866498C30F98239300B72B53 /* ExpediaBuddyViewController.xib in Resources */,
+				866498C40F98239300B72B53 /* ItineraryView.xib in Resources */,
+				866498C50F98239300B72B53 /* hdr_logo.png in Resources */,
+				866498C60F98239300B72B53 /* whiteButton.png in Resources */,
+				866498C70F98239300B72B53 /* blueButton.png in Resources */,
+				866498C90F98239300B72B53 /* glossy_3d_blue_orbs2_059.png in Resources */,
+				866498CA0F98239300B72B53 /* glossy_3d_blue_plane.png in Resources */,
+				866498CB0F98239300B72B53 /* expedia_itinerary.html in Resources */,
+				866498CC0F98239300B72B53 /* HTMLDetailView.xib in Resources */,
+				866498CD0F98239300B72B53 /* itn-detail.html in Resources */,
+				866498CE0F98239300B72B53 /* pants_icon.png in Resources */,
+				866498CF0F98239300B72B53 /* ItineraryPreView.xib in Resources */,
+				866498D00F98239300B72B53 /* VoucherView.xib in Resources */,
+				8664997F0F98288B00B72B53 /* icon-57.png in Resources */,
+				868B14800FA69617006D930B /* Three20.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866498FF0F9823BD00B72B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866499000F9823BD00B72B53 /* MainWindow.xib in Resources */,
+				866499010F9823BD00B72B53 /* disclosureButtonControllerIcon.png in Resources */,
+				866499020F9823BD00B72B53 /* detailEditIcon.png in Resources */,
+				866499030F9823BD00B72B53 /* deleteMeIcon.png in Resources */,
+				866499040F9823BD00B72B53 /* rowControlsIcon.png in Resources */,
+				866499050F9823BD00B72B53 /* checkmarkControllerIcon.png in Resources */,
+				866499060F9823BD00B72B53 /* moveMeIcon.png in Resources */,
+				866499090F9823BD00B72B53 /* ExpediaBuddyViewController.xib in Resources */,
+				8664990A0F9823BD00B72B53 /* ItineraryView.xib in Resources */,
+				8664990B0F9823BD00B72B53 /* hdr_logo.png in Resources */,
+				8664990C0F9823BD00B72B53 /* whiteButton.png in Resources */,
+				8664990D0F9823BD00B72B53 /* blueButton.png in Resources */,
+				8664990F0F9823BD00B72B53 /* glossy_3d_blue_orbs2_059.png in Resources */,
+				866499100F9823BD00B72B53 /* glossy_3d_blue_plane.png in Resources */,
+				866499110F9823BD00B72B53 /* expedia_itinerary.html in Resources */,
+				866499120F9823BD00B72B53 /* HTMLDetailView.xib in Resources */,
+				866499130F9823BD00B72B53 /* itn-detail.html in Resources */,
+				866499140F9823BD00B72B53 /* pants_icon.png in Resources */,
+				866499150F9823BD00B72B53 /* ItineraryPreView.xib in Resources */,
+				866499160F9823BD00B72B53 /* VoucherView.xib in Resources */,
+				8664997E0F98288B00B72B53 /* icon-57.png in Resources */,
+				866499D20F982D8A00B72B53 /* Entitlements.plist in Resources */,
+				868B147F0FA69617006D930B /* Three20.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* NavAppDelegate.m in Sources */,
+				1FC644810E364645009A5515 /* RootViewController.m in Sources */,
+				8609D5050F6F3553004C7CC4 /* ExpediaBuddyViewController.m in Sources */,
+				8609D52C0F6F3D64004C7CC4 /* XPathQuery.m in Sources */,
+				8609D64A0F6F49F4004C7CC4 /* FirstLevelViewController.m in Sources */,
+				861F7F7F0F71DBF5009288EA /* Itinerary.m in Sources */,
+				867855CA0F71F1F00078FC2B /* ItinsViewController.m in Sources */,
+				8670BFC80F76EBC100B4CDC4 /* ExpediaSiteInterface.m in Sources */,
+				8670C0660F76FE4700B4CDC4 /* ExpediaUtils.m in Sources */,
+				8602CC8C0F79D6CD0003545B /* HTMLDetailViewController.m in Sources */,
+				8639FC220F7C4A91000CDDA9 /* DataManager.m in Sources */,
+				8639FC3E0F7C4BA9000CDDA9 /* ExbuddiaData.m in Sources */,
+				8615F2290F81AB61001739D7 /* Reachability.m in Sources */,
+				8615F2BD0F81C06C001739D7 /* SFHFKeychainUtils.m in Sources */,
+				8624477E0F8D80E200C50745 /* RegexKitLite.m in Sources */,
+				8626F9EF0F91301D00C3A673 /* ItineraryPreViewController.m in Sources */,
+				86DAB2EB0F9267560090BDA6 /* MockPhotoSource.m in Sources */,
+				86FB09A80F938F700065D00C /* RKLMatchEnumerator.m in Sources */,
+				86FB0A430F93A18A0065D00C /* Voucher.m in Sources */,
+				86E39A200F93EB0400F58ABA /* VoucherViewController.m in Sources */,
+				868298AA0F9FED1F00D8D1E0 /* InternetImage.m in Sources */,
+				868299180F9FFC0300D8D1E0 /* ThreadRequestLoader.m in Sources */,
+				8638F0000FA7CF72007316BC /* GeoNamesSiteInterface.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866498D20F98239300B72B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866498D30F98239300B72B53 /* main.m in Sources */,
+				866498D40F98239300B72B53 /* NavAppDelegate.m in Sources */,
+				866498D50F98239300B72B53 /* RootViewController.m in Sources */,
+				866498D60F98239300B72B53 /* ExpediaBuddyViewController.m in Sources */,
+				866498D70F98239300B72B53 /* XPathQuery.m in Sources */,
+				866498D80F98239300B72B53 /* FirstLevelViewController.m in Sources */,
+				866498D90F98239300B72B53 /* Itinerary.m in Sources */,
+				866498DA0F98239300B72B53 /* ItinsViewController.m in Sources */,
+				866498DB0F98239300B72B53 /* ExpediaSiteInterface.m in Sources */,
+				866498DC0F98239300B72B53 /* ExpediaUtils.m in Sources */,
+				866498DD0F98239300B72B53 /* HTMLDetailViewController.m in Sources */,
+				866498DE0F98239300B72B53 /* DataManager.m in Sources */,
+				866498DF0F98239300B72B53 /* ExbuddiaData.m in Sources */,
+				866498E00F98239300B72B53 /* Reachability.m in Sources */,
+				866498E10F98239300B72B53 /* SFHFKeychainUtils.m in Sources */,
+				866498E20F98239300B72B53 /* RegexKitLite.m in Sources */,
+				866498E30F98239300B72B53 /* ItineraryPreViewController.m in Sources */,
+				866498E40F98239300B72B53 /* MockPhotoSource.m in Sources */,
+				866498E60F98239300B72B53 /* RKLMatchEnumerator.m in Sources */,
+				866498E70F98239300B72B53 /* Voucher.m in Sources */,
+				866498E80F98239300B72B53 /* VoucherViewController.m in Sources */,
+				868298A90F9FED1F00D8D1E0 /* InternetImage.m in Sources */,
+				868299170F9FFC0300D8D1E0 /* ThreadRequestLoader.m in Sources */,
+				8638EFFF0FA7CF72007316BC /* GeoNamesSiteInterface.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866499180F9823BD00B72B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866499190F9823BD00B72B53 /* main.m in Sources */,
+				8664991A0F9823BD00B72B53 /* NavAppDelegate.m in Sources */,
+				8664991B0F9823BD00B72B53 /* RootViewController.m in Sources */,
+				8664991C0F9823BD00B72B53 /* ExpediaBuddyViewController.m in Sources */,
+				8664991D0F9823BD00B72B53 /* XPathQuery.m in Sources */,
+				8664991E0F9823BD00B72B53 /* FirstLevelViewController.m in Sources */,
+				8664991F0F9823BD00B72B53 /* Itinerary.m in Sources */,
+				866499200F9823BD00B72B53 /* ItinsViewController.m in Sources */,
+				866499210F9823BD00B72B53 /* ExpediaSiteInterface.m in Sources */,
+				866499220F9823BD00B72B53 /* ExpediaUtils.m in Sources */,
+				866499230F9823BD00B72B53 /* HTMLDetailViewController.m in Sources */,
+				866499240F9823BD00B72B53 /* DataManager.m in Sources */,
+				866499250F9823BD00B72B53 /* ExbuddiaData.m in Sources */,
+				866499260F9823BD00B72B53 /* Reachability.m in Sources */,
+				866499270F9823BD00B72B53 /* SFHFKeychainUtils.m in Sources */,
+				866499280F9823BD00B72B53 /* RegexKitLite.m in Sources */,
+				866499290F9823BD00B72B53 /* ItineraryPreViewController.m in Sources */,
+				8664992A0F9823BD00B72B53 /* MockPhotoSource.m in Sources */,
+				8664992C0F9823BD00B72B53 /* RKLMatchEnumerator.m in Sources */,
+				8664992D0F9823BD00B72B53 /* Voucher.m in Sources */,
+				8664992E0F9823BD00B72B53 /* VoucherViewController.m in Sources */,
+				868298A80F9FED1F00D8D1E0 /* InternetImage.m in Sources */,
+				868299160F9FFC0300D8D1E0 /* ThreadRequestLoader.m in Sources */,
+				8638EFFE0FA7CF72007316BC /* GeoNamesSiteInterface.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8638EF5A0FA6AC38007316BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = 8638EF590FA6AC38007316BC /* PBXContainerItemProxy */;
+		};
+		8638EF5C0FA6AC4B007316BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = 8638EF5B0FA6AC4B007316BC /* PBXContainerItemProxy */;
+		};
+		8638EF5E0FA6AC5D007316BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = 8638EF5D0FA6AC5D007316BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLibWithLocation\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "Exbuddia-Dev";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLibWithLocation\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = Exbuddia;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+			};
+			name = Release;
+		};
+		866498F60F98239300B72B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Dreeling";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = "/devel/projects/iphone/ExpBuddyNav/Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FlurryLibWithLocation",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = Exbuddia;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E960F25-A845-476F-97F2-6651C54D7D07";
+			};
+			name = Debug;
+		};
+		866498F70F98239300B72B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = "/devel/projects/iphone/ExpBuddyNav/Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/FlurryLibWithLocation\\\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = Exbuddia;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+			};
+			name = Release;
+		};
+		8664993C0F9823BD00B72B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = "/devel/projects/iphone/ExpBuddyNav/Info copy 2.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLibWithLocation\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "Exbuddia-Beta";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+			};
+			name = Debug;
+		};
+		8664993D0F9823BD00B72B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = "/devel/projects/iphone/ExpBuddyNav/Info copy 2.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/FlurryLibWithLocation\\\\\\\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = Exbuddia;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+			};
+			name = Release;
+		};
+		866499720F9826A900B72B53 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/devel/projects/libraries/three20/src/**",
+					"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.2.1.sdk/usr/include/libxml2/**",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Distribution;
+		};
+		866499730F9826A900B72B53 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLibWithLocation\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "Exbuddia-Dev";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+			};
+			name = Distribution;
+		};
+		866499740F9826A900B72B53 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Dreeling";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"/devel/external-lib/three20/src/**",
+					"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.2.1.sdk/usr/include/libxml2/**",
+				);
+				INFOPLIST_FILE = "/devel/projects/iphone/ExpBuddyNav/Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FlurryLibWithLocation",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "Exbuddia-Store";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A6183E41-F33D-41F7-B13A-0FD9046F937B";
+			};
+			name = Distribution;
+		};
+		866499750F9826A900B72B53 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Dreeling";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nav_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"/devel/external-lib/three20/src/**",
+					"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.2.1.sdk/usr/include/libxml2/**",
+				);
+				INFOPLIST_FILE = "/devel/projects/iphone/ExpBuddyNav/Info copy 2.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLibWithLocation\"",
+					"\"$(SRCROOT)/../../../external-lib/three20/src/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "Exbuddia-Beta";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E960F25-A845-476F-97F2-6651C54D7D07";
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/devel/external-lib/three20/src/**",
+					"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.2.1.sdk/usr/include/libxml2/**",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dreeling";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/devel/projects/libraries/three20/src/**",
+					"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.2.1.sdk/usr/include/libxml2/**",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B8A99E26-B681-49B1-9F25-4C80BC7C90BD";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Exbuddia - Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				866499730F9826A900B72B53 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		866498F50F98239300B72B53 /* Build configuration list for PBXNativeTarget "Exbuddia - Distribution Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				866498F60F98239300B72B53 /* Debug */,
+				866498F70F98239300B72B53 /* Release */,
+				866499740F9826A900B72B53 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8664993B0F9823BD00B72B53 /* Build configuration list for PBXNativeTarget "Exbuddia - Distribution Adhoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8664993C0F9823BD00B72B53 /* Debug */,
+				8664993D0F9823BD00B72B53 /* Release */,
+				866499750F9826A900B72B53 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ExpBuddyNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				866499720F9826A900B72B53 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,69 @@
+<div class="home-tweet-box tweet-box component tweet-user">
+	<div class="content-header">
+		<div class="header-inner">
+			<h2 class="js-timeline-title">Review something!</h2>
+		</div>
+	</div>
+	<% if @movie_review.nil? %>
+	<% @movie_review = current_user.movie_reviews.build %>
+	<% end %>
+	<% @genres = Genre.all if signed_in?%>
+	<% @mediatypes = Medium.all if signed_in?%>
+	<%= form_for @movie_review, html: { id:"new_movie_review",multipart: true, class:'class="tweet-form condensed'} do |f| %>
+	<%= render 'shared/error_messages', object: f.object %>
+	<div class="tweet-content">
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				<%= f.text_field :reviewtitle, placeholder: "Review Title",:class => "tweet-box", :size => "49px"%>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				<%= f.collection_select(:genre_id, @genres, :id, :name, :include_blank => "Movie Genre",:class => "tweet-box", :size => "49px") %>
+			</div>
+		</fieldset>
+
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				<%= f.text_field :movietitle, placeholder: "Movie Title" ,:class => "tweet-box", :size => "49px"%>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				<%= f.file_field :image %>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				Review date<%= f.text_field :revieweddate, placeholder: "Date reviewed", :value=>Date.today.strftime('%m-%d-%Y'), :id =>"rev" ,:class => "tweet-box", :size => "49px"%>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				DVD release date<%= f.text_field :dvdreleasedate, placeholder: "DVD release date", :value=>Date.today.strftime('%m-%d-%Y'), :id =>"dvd" ,:class => "tweet-box", :size => "49px"%>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				<%= f.collection_select(:media_id, @mediatypes, :id, :name, :include_blank => "Media Type",:class => "tweet-box", :size => "49px")%>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				In theaters? <%= f.check_box :theaterrelease, placeholder: "Compose new movie review..." ,:class => "tweet-box", :size => "49px"%>
+			</div>
+		</fieldset>
+		<fieldset id="11" class="control-group">
+			<div class="controls">
+				<%= f.text_area :reviewcontent, placeholder: "Compose new movie review..." ,:class => "tweet-box", :size => "49px"%>
+			</div>
+		</fieldset>
+	</div>
+
+	<div class="toolbar js-toolbar">
+		<div class="tweet-button">
+			<input class="btn btn-large btn-primary" type="submit" value="Post" onclick="document.getElementById('new_movie_review').submit();" name="commit">
+		</div>
+	</div>
+	<% end %>
+</div>
